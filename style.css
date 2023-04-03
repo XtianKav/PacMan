@@ -1,0 +1,61 @@
+body, html{
+    background-color: darkgrey;
+    color: white;   
+}
+
+#score{
+    text-align: center;
+}
+
+#game{
+    /* 15 * 24 => Taille de cellule multiplier par le nombre d'élément dans une rangée par ligne dans le tableau layOut*/ 
+    width: 560px;
+    height: 560px;    
+    display: flex; /* tout composant enfant de ce parent se place horizotalement*/
+    flex-wrap: wrap; /* le retour se fait à la ligne de sous composant*/
+    background-color: black;
+    margin: auto;
+}
+#game div{
+    /* 20px est la taille d'une cellule */
+    width: 20px;
+    height: 20px;    
+}
+
+#game div.mur{       
+    background-color: cornflowerblue;
+}
+
+#game div.point{       
+    background-color: rgb(208, 218, 78);
+    border-radius: 50%;
+    border: black solid 7px;
+    box-sizing: border-box;
+}
+
+#game div.fantome-area{       
+    background-color: rgb(240, 73, 109);
+}
+
+
+#game div.fantome{       
+    background-color: blueviolet;
+    border-radius: 35%;
+    border: black solid 2px;
+    box-sizing: border-box;
+    
+}
+
+#game div.point-puissance{       
+    background-color: rgb(55, 180, 72);
+    border-radius: 50%;
+    border: black solid 1px;
+    box-sizing: border-box;
+}
+
+#game div.pacman{       
+    background-color: rgb(224, 68, 40);
+    border-radius: 50%;
+    border: black solid 1px;
+    box-sizing: border-box;
+}
